@@ -1,46 +1,46 @@
 <!DOCTYPE html>
+
 <head>
-    <title>MyWebsite</title>
-    <meta charset= "UTF-8"/>
+    <title>KUMAFoods</title>
+    <meta charset="UTF-8" />
+    <style>
+        .HeaderFooter {
+            background-color: darkblue;
+            text-align: center;
+        }
+
+        #searchAndLogin {
+            background-color: aqua;
+        }
+
+        #LoginButton {
+            float: right;
+        }
+
+        #RegisterButton {
+            float: right;
+        }
+    </style>
 </head>
+
 <body>
-    <header> <h1>KUMAFoods</h1></header> 
-   
-    <article>
-        <img src="kuma_logo.jpg">
-
-    </article>
-
-    <section>
+    <header class="HeaderFooter">
+        <h1>KUMAFoods</h1>
+    </header>
+    <div id="searchAndLogin">
         <form>
-        Name: <input type= "text" value=" namen eingeben" > <br>
-        E-Mail: <input type= "email" value="email eingeben"> <br>
-        Passwort: <input type="password"> <br>
-        Description: <textarea></textarea> <br>
-        Male: <input type="radio" name= "gender"> <br>
-        Female: <input type="radio" name="gender"> <br>
-        <select>
-            <option>Germany</option>
-            <option>Great Britain</option>  
-        </select> <br> <br>
-        <button>Register</button>
-        
+            <input type="text" value="Suchtext eingeben ...">
+
+            <button id="LoginButton"> Login </button>
+            <button id="RegisterButton"> Register </button>
         </form>
-
-    </section>
-
-    <p> <b>Willkommen auf <em>unserer Seite.</em> </b>  <br> 
-            Wir bieten, Ihnen Informationen über die Laktose, Glukose.. zu Lebensmittel an. 
-    </p> 
-
-    <ol>
-        <li> hi</li>
-        <li>hey</li>
-    </ol>
-    <ul>
-        <li>hui</li>
-        <li><strike>phui</strike> </li>
-    </ul>
-    <footer>copyright</footer>
+    </div>
+    <table>
+        <tr>
+            <td>Bild</td>
+            <td>Beschreibung</td>
+        </tr>
+    </table>
+    <footer class="HeaderFooter">copyright @KUMAVISION AG</footer>
 
 </body>
