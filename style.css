@@ -14,3 +14,6 @@
 #RegisterButton {
     float: right;
 }
+.input {
+    width: 100px;
+}
