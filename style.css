@@ -1,0 +1,16 @@
+.HeaderFooter {
+    background-color: darkblue;
+    text-align: center;
+}
+
+#searchAndLogin {
+    background-color: aqua;
+}
+
+#LoginButton {
+    float: right;
+}
+
+#RegisterButton {
+    float: right;
+}
