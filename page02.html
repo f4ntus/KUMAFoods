@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>MyWebsite</title>
-        <meta charset= "UTF-8"/>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <style>
 
-         #paprika {
-            width: 305px;
-            height:375px;
+<head>
+    <title>MyWebsite</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
 
-         }
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">KUMAFoods</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <button class="btn btn-link" type="submit">Login</button>
+            <button class="btn btn-link" type="submit">Register</button>
+        </div>
+    </nav>
 
-         body {
-             float: left;
-         }
 
-         footer {
-             float: left;
-         }
-        </style>
-    </head>
-
-    <body>
-        <header> <h1>Name of the product</h1></header> 
-    
-        <div>
-            <div style="width:fit-content">
-                <img id="paprika"src="paprika.jpg" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h1>Paprika</h1>
             </div>
-        
-
-        <div style="margin-right: 30px; float:right">
-            <table style="float:right"">
-                    <colgroup>
-                        <col width="150">
-                        <col width="150">
-                        <col width="150">
-                      </colgroup>
-                <tr>
-                <th>Description</th>                       
-                <th>Value per 100g</th>
-                <th>Indicator</th>
-                </tr>
-                <tr>
-                <td>Glukose</td>
-                <td>1,38g</td>
-                <td>Green</td>
-                </tr>
-                <tr>
-                <td>Fruktose</td>
-                <td>3,74g</td>
-                <td>Green</td>
-                </tr>
-            </table>
+        </div>
+        <div class="row">
+            <div class="col" style="width:fit-content">
+                <img id="paprika" src="paprika.jpg"  alt="Responsive image" class="img-thumbnail" width="500px">
+            </div>
+            <div class="col" >
+                <table class="table table-hover">
+                    <tr>
+                        <th>Description</th>
+                        <th>Value per 100g</th>
+                        <th>Indicator</th>
+                    </tr>
+                    <tr>
+                        <td>Glukose</td>
+                        <td>1,38g</td>
+                        <td>Green</td>
+                    </tr>
+                    <tr>
+                        <td>Fruktose</td>
+                        <td>3,74g</td>
+                        <td>Green</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 
+    <div class="card-body">
+        <a href="index.html" class="card-link">Zurück</a>
+        <a href="#" class="card-link">Editieren</a>
+    </div>
 
-    <footer>
-                <button>Neue suche</button> <br>
-                <button>Editieren</button>
-    </footer>
 </body>
 
 </html>
-   
