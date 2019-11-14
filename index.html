@@ -16,6 +16,7 @@
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="navigation.js"></script>
 </head>
 
 <body
@@ -37,26 +38,28 @@
             <a class="btn btn-link" href="#" role="button">Impressum</a>
             <a class="btn btn-link" href="#" role="button">Datenschutzerklärungen</a>
             <a class="btn btn-link" href="anmeldung.html" role="button">Login</a>
-            <a class="btn btn-link" href="#" role="button">Register</a>
+            <a class="btn btn-link" onclick="register()" role="button">Register</a>
         </div>
     </nav>
     <!-- Suche-->
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <form>
-                    <div class="form-row" id="searchForm">
-                        <div class="col">
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Suche">
+    <button onclick="register()">Click me</button>
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <div class="form-row" id="searchForm">
+                            <div class="col">
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Suche">
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-success" type="submit">Suche</button>
+                            </div>
                         </div>
-                        <div class="col">
-                            <button class="btn btn-outline-success" type="submit">Suche</button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
-
         <!--
         <div class="row">
             <div class="col">
