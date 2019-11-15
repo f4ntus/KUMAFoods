@@ -23,7 +23,7 @@
     style="background-image:url('food_ernaehrung_veganismus.jpeg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
     <!-- NAV Titlebar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">KUMAFoods</a>
+        <a class="navbar-brand" href="#" >KUMAFoods</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,30 +35,33 @@
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
-            <a class="btn btn-link" href="anmeldung.html" role="button">Login</a>
-            <a class="btn btn-link" href="Register.html" onclick="register()" role="button">Register</a>
+            <a class="btn btn-link" href="anmeldung.html" role="button" style="color: blue">Login</a>
+            <a class="btn btn-link" href="Register.html" onclick="register()" role="button" style="color: blue">Register</a>
         </div>
     </nav>
     <!-- Suche-->
     <button onclick="register()">Click me</button>
     <div id="content">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <form>
-                        <div class="form-row" id="searchForm">
-                            <div class="col">
-                                <input class="form-control" type="search" placeholder="Search" aria-label="Suche">
-                            </div>
-                            <div class="col">
-                                <button class="btn btn-outline-success" type="submit">Suche</button>
-                            </div>
+
+        <form>
+            <div class="form-row" id="searchForm">
+
+                <div class="form-group row" style="color: white; margin-top: 25px; margin-left: 25px">
+                    <label for="search" class="col-sm-2 col-form-label">Suche</label>
+                    <div class="col-sm-10">
+
+                        <input type="search" class="form-control" id="inputsearch" placeholder="Suchen" ;
+                            style="width: 400px">
+                        <div class="col-sm-20" style="margin-top: 25px">
+                            <input class="btn btn-primary" type="submit" value="Suchen" style="width: 120px">
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!--
+        </form>
+    </div>
+
+    <!--
         <div class="row">
             <div class="col">
                 <table>
@@ -72,12 +75,13 @@
     -->
     </div>
     <footer class="HeaderFooter">
-        <div class="footer" style="background-color: grey; height: 60px; bottom:0px; padding-bottom:20px;">
+        <div class="footer" style="background-color:rgb(247, 247, 247); height: 60px; bottom:0px; padding-bottom:20px;">
             <span style="color: white; margin-left: 25px">
-                <a style="color: white; float: left; margin-left: 25px">KUMAFoods</a> <br>
-                <a style="color: white; float: left; margin-left: 25px">copyright @KUMAVISION AG</a>
-                <a style="color: white; float: right; margin-right: 25px" href="impressum.html">Impressum</a>
-                <a style="color: white; float: right; margin-right: 40px;" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
+                <a style="color: black; float: left; margin-left: 25px">KUMAFoods</a> <br>
+                <a style="color: black; float: left; margin-left: 25px">copyright @KUMAVISION AG</a>
+                <a style="color: blue; float: right; margin-right: 25px" href="impressum.html">Impressum</a>
+                <a style="color: blue; float: right; margin-right: 40px;"
+                    href="datenschutzerklaerung.html">Datenschutzerklärung</a>
             </span>
 
         </div>
