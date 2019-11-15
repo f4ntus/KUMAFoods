@@ -8,6 +8,7 @@
         width: 100%;
         text-align: center;
     }
+
 </style>
 
 <head>
@@ -19,16 +20,14 @@
     <script src="navigation.js"></script>
 </head>
 
-<body
-    style="background-image:url('food_ernaehrung_veganismus.jpeg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+<body style="background-image:url('food_ernaehrung_veganismus.jpeg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
     <!-- NAV Titlebar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#" >KUMAFoods</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">KUMAFoods</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -36,7 +35,8 @@
                 </li>
             </ul>
             <a class="btn btn-link" href="anmeldung.html" role="button" style="color: blue">Login</a>
-            <a class="btn btn-link" href="Register.html" onclick="register()" role="button" style="color: blue">Register</a>
+            <a class="btn btn-link" href="Register.html" onclick="register()" role="button"
+                style="color: blue">Register</a>
         </div>
     </nav>
     <!-- Suche-->
@@ -47,7 +47,6 @@
             <div class="form-row" id="searchForm">
 
                 <div class="form-group row" style="color: white; margin-top: 25px; margin-left: 25px">
-                    <label for="search" class="col-sm-2 col-form-label">Suche</label>
                     <div class="col-sm-10">
 
                         <input type="search" class="form-control" id="inputsearch" placeholder="Suchen" ;
@@ -61,6 +60,33 @@
         </form>
     </div>
 
+    <div style="color: white; width: 700px; margin-left: 25px; margin-top: 25px;">
+        <h3>Herzlich willkommen auf KUMAFoods</h3><br>
+        <div style="margin-top: -20px; margin-bottom: 80px;">
+            Wir bieten Ihnen mit unserer umfangreichen Datenbank eine schnelle Orientierungshilfe, wenn Sie sich über
+            die Fruktose-, Glukose- und Laktosewerte verschiedener Lebensmittel informieren wollen. <br><br>
+
+            Naturgemäß können die Nährwerte von Nahrungsmittel stark schwanken. Je nach Sorte, Standort und Erntezeit
+            kann sich z.B. der Fruktose- und Glukosegehalt einer Birne signifikant ändern. Dabei muss man bei allen
+            Tabellen mit verschiedenen Gehaltsangaben vorsichtig sein. Diese Werte sind immer nur Durchschnittswerte, es
+            sind niemals exakte Angaben. Tabellen wie diese dienen der Orientierung und sind nicht als exakte Vorgaben
+            zu sehen. <br><br>
+
+            <b>Wie liest man die Liste richtig?</b> <br>
+
+            • Die Werte sind aus Mittelwerten berechnet. Da es bei den meisten Produkten zu natürlichen Schwankungen
+            kommen kann, sind diese Werte nur als Faustregel zu sehen<br>
+            • Werte sind nur angegeben, wenn uns gemessene Werte vorliegen. Wenn kein Wert eingetragen ist, heißt das
+            nicht, dass das Lebensmittel frei von diesem Stoff ist, der Wert wird mit ‚-‘ eingetragen<br>
+            • Lebensmittel mit dem explizit benannten Wert 0 enthalten diesen Stoff nicht<br>
+            • Die Werte sind in Gramm pro 100 Gramm Lebensmittel angegeben<br>
+            • Wir geben den Gesamtfruktosegehalt und Gesamtglukosegehalt an, dieser inkludiert immer die freie Fructose/
+            Glukose und den halben Saccharosewert<br>
+            • Der Verträglichkeitsindex ist eine reine Orientierungshilfe, da die Verträglichkeit von verschiedenen
+            Faktoren wie Reifegrad, Lagerung, Verzehrmenge, Sorte usw. abhängig sind<br>
+
+        </div>
+    </div>
     <!--
         <div class="row">
             <div class="col">
