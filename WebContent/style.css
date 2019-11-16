@@ -7,6 +7,12 @@ h1{
     background-color: rgba(255,255,255,0.8);
     border-radius: 5px;
 }
+#alertPlaceholder{
+    visibility: hidden;
+}
+SearchResultTable{
+    visibility: hidden;
+}
 .row{
     margin-top: 20px;
 }

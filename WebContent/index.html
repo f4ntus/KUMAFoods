@@ -17,10 +17,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="./JavaScript/Search.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body
     style="background-image:url('food_ernaehrung_veganismus.jpeg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; margin-top: 100px;">
+
     <!-- NAV Titlebar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">KUMAFoods</a>
@@ -47,11 +49,11 @@
                 <input type="search" class="form-control" id="inputSearch" placeholder="Suchen" style="width: 400px">
             </div>
             <div class="col col-lg-2">
-                <button class="btn btn-primary" onclick="searchFoods">Suche</button>
+                <button class="btn btn-primary" onclick="searchFoods()">Suche</button>
             </div>
         </div>
         <!-- Suchergebnis-->
-        <div class="row" >
+        <div class="row">
             <div class="col">
                 <table class="table table-hover" id="SearchResultTable">
                     <!-- will be filled with content from JS-->
