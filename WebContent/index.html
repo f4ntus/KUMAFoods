@@ -42,19 +42,21 @@
 
     <!-- Suche-->
     <div class="container">
-        <div class="row" id="searchForm">
+        <div class="row justify-content-md-center">
             <div class="colcol-md-auto">
-                <input type="search" class="form-control" id="inputsearch" placeholder="Suchen" style="width: 400px">
+                <input type="search" class="form-control" id="inputSearch" placeholder="Suchen" style="width: 400px">
             </div>
-            <div class="col">
-                <button class="btn btn-primary" onclick="searchFoods('Paprika')">Suche</button>
+            <div class="col col-lg-2">
+                <button class="btn btn-primary" onclick="searchFoods">Suche</button>
             </div>
         </div>
-        <div class"row">
-            <!-- Suchergebnis-->
-            <table class="table table-hover" id="SearchResultTable">
-                <!-- will be filled with content from JS-->
-            </table>
+        <!-- Suchergebnis-->
+        <div class="row" >
+            <div class="col">
+                <table class="table table-hover" id="SearchResultTable">
+                    <!-- will be filled with content from JS-->
+                </table>
+            </div>
         </div>
     </div>
 
