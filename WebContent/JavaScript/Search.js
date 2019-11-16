@@ -1,17 +1,21 @@
-function searchFoods(searchString){
-   let myfoods = getFoods();
-   console.log(searchString);
-   var result = myfoods.filter (X => X.name == searchString);
-   console.log(result);
+function searchFoods(searchString) {
+    console.log("hello Wolrd");
+    let myfoods = getFoods();
+    console.log(searchString);
+    var result = myfoods.filter(X => X.name == searchString);
+    console.log(result);
+    generateSearchResultTable(result);
 }
+
 function generateSearchResultTable(foods){
     let HTMLString;
     foods.forEach(food => {
-        HTMLString =  "<tr> <th>" + food.picture + "</th> <th>" + food.description + "</th> <th>" + food.description + "</th> </tr>";
+        HTMLString =  "<tr> <th>" + food.picture + "</th> <th>" + food.name + "</th> <th>" + food.description + "</th> </tr>";
     });
     HTMLTable = document.getElementById("SearchResultTable");
     HTMLTable.innerHTML = HTMLString;
 }
+
 function getFoods(){
     foods = [
         {

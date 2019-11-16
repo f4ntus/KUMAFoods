@@ -8,7 +8,6 @@
         width: 100%;
         text-align: center;
     }
-
 </style>
 
 <head>
@@ -17,10 +16,11 @@
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="navigation.js"></script>
+    <script src="./JavaScript/Search.js"></script>
 </head>
 
-<body style="background-image:url('food_ernaehrung_veganismus.jpeg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; margin-top: 100px;">
+<body
+    style="background-image:url('food_ernaehrung_veganismus.jpeg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; margin-top: 100px;">
     <!-- NAV Titlebar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">KUMAFoods</a>
@@ -39,26 +39,22 @@
                 style="color: blue">Register</a>
         </div>
     </nav>
+
     <!-- Suche-->
-    <button onclick="register()">Click me</button>
-    <div id="content">
-
-        <form>
-            <div class="form-row" id="searchForm">
-
-                <div class="form-group row" style="color: white; margin-top: 25px; margin-left: 25px">
-                    <div class="col-sm-10">
-
-                        <input type="search" class="form-control" id="inputsearch" placeholder="Suchen" ;
-                            style="width: 400px">
-                        <div class="col-sm-20" style="margin-top: 25px">
-                            <input class="btn btn-primary" type="submit" value="Suchen" style="width: 120px">
-                        </div>
-                    </div>
-                </div>
+    <div class="row" id="searchForm">
+            <div class="col-sm-10">
+                <input type="search" class="form-control" id="inputsearch" placeholder="Suchen" style="width: 400px">
             </div>
-        </form>
+            <div class="col-sm-20" style="margin-top: 25px">
+                <button class="btn btn-primary" onclick="searchFoods('Paprika')">Suche</button>                
+            </div>
+        </div>
     </div>
+    
+    <!-- Suchergebnis-->
+    <table class="table table-hover" id="SearchResultTable">
+        <!-- will be filled with content from JS-->
+    </table> 
 
     <div style="color: white; width: 700px; margin-left: 25px; margin-top: 25px;">
         <h3>Herzlich willkommen auf KUMAFoods</h3><br>
