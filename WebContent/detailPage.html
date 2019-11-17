@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <script src="./JavaScript/Search.js"></script>
 </head>
 
 <body>
@@ -31,12 +32,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <h1>Paprika</h1>
+                <h1 id="foodName">Paprika</h1>
             </div>
         </div>
         <div class="row">
             <div class="col" style="width:fit-content">
-                <img id="paprika" src="paprika.jpg"  alt="Responsive image" class="img-thumbnail" width="500px">
+                <img id="foodPicture" src="paprika.jpg"  alt="Responsive image" class="img-thumbnail" width="500px">
             </div>
             <div class="col" >
                 <table class="table table-hover">
@@ -47,12 +48,17 @@
                     </tr>
                     <tr>
                         <td>Glukose</td>
-                        <td>1,38g</td>
+                        <td id="foodGlucose">1,38g</td>
                         <td>Green</td>
                     </tr>
                     <tr>
                         <td>Fruktose</td>
-                        <td>3,74g</td>
+                        <td id="foodFructose">3,74g</td>
+                        <td>Green</td>
+                    </tr>
+                    <tr>
+                        <td>Lactose</td>
+                        <td id="foodLactose"></td>
                         <td>Green</td>
                     </tr>
                 </table>
