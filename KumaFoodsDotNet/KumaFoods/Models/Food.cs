@@ -14,5 +14,5 @@ namespace KumaFoods.Models
         public String FoodName { get; set; }
         public String FoodDescription { get; set; }
 
-    }
+     }
 }
