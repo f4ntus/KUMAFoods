@@ -13,6 +13,10 @@ namespace ServerApp.Models
         [Key]
         public String FoodName { get; set; }
         public String FoodDescription { get; set; }
+        public Double Fruktosegehalt { get; set; }
+        public Double Sorbitgehalt { get; set; }
+        public Double Glukosegehalt { get; set; }
+        public Double Saccharosegehalt { get; set; }
 
-     }
+    }
 }
