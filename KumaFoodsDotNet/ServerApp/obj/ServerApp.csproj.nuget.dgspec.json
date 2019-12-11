@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GIT\\KUMAFoods\\KumaFoodsDotNet\\ServerApp\\ServerApp.csproj": {}
+    "C:\\temp\\KUMAfoodsNew\\KUMAFoods\\KumaFoodsDotNet\\ServerApp\\ServerApp.csproj": {}
   },
   "projects": {
-    "C:\\GIT\\KUMAFoods\\KumaFoodsDotNet\\ServerApp\\ServerApp.csproj": {
+    "C:\\temp\\KUMAfoodsNew\\KUMAFoods\\KumaFoodsDotNet\\ServerApp\\ServerApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\KUMAFoods\\KumaFoodsDotNet\\ServerApp\\ServerApp.csproj",
+        "projectUniqueName": "C:\\temp\\KUMAfoodsNew\\KUMAFoods\\KumaFoodsDotNet\\ServerApp\\ServerApp.csproj",
         "projectName": "ServerApp",
-        "projectPath": "C:\\GIT\\KUMAFoods\\KumaFoodsDotNet\\ServerApp\\ServerApp.csproj",
-        "packagesPath": "C:\\Users\\jscheffo\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\KUMAFoods\\KumaFoodsDotNet\\ServerApp\\obj\\",
+        "projectPath": "C:\\temp\\KUMAfoodsNew\\KUMAFoods\\KumaFoodsDotNet\\ServerApp\\ServerApp.csproj",
+        "packagesPath": "C:\\Users\\Dajana.Thoebes\\.nuget\\packages\\",
+        "outputPath": "C:\\temp\\KUMAfoodsNew\\KUMAFoods\\KumaFoodsDotNet\\ServerApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\jscheffo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dajana.Thoebes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
