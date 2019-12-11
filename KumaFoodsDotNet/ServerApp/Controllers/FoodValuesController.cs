@@ -7,7 +7,7 @@ using ServerApp.Models;
 
 
 /* JOSC: This Class is an Controller for the Webservices of foods. 
- * you can get an singel food with the following link:
+ * you can get an single food with the following link:
  * https://localhost:5001/api/foods/Gurke -> you will receive an Gurke Object
  * 
  * it is also possible to receive the hole food Data with Link:

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { log } from 'util';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-mainPage',
@@ -7,13 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
+  searchresult: string[];
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {  }
 
-  /* searchFoods(value: any) {
-    console.log(value);
-  } */
+  searchFoodHandler() {
+
+  }
 
 }

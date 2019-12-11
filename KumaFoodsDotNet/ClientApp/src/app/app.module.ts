@@ -1,7 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,6 +34,7 @@ import { ModelModule } from './models/model.modul';
       BrowserModule,
       AppRoutingModule,
       ModelModule,
+      HttpClientModule,
       // JOOSC.StartownModel\nFormsModule
       RouterModule.forRoot(RouteHome)
    ],
