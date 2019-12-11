@@ -27,11 +27,11 @@ namespace ServerApp.Controllers
         {
             context = ctx;
         }
-        [HttpGet("{name}")]
-        public Food GetFood(String name)
+        [HttpGet("{foodName}")]
+        public Food GetFood(String foodName)
         {
             System.Threading.Thread.Sleep(5000);
-            return context.Foods.Find(name);
+            return context.Foods.Find(foodName);
         }
         [HttpGet]
         public IEnumerable<Food> GetProducts()

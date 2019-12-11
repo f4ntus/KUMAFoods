@@ -9,6 +9,8 @@ import { MainPageComponent } from './mainPage/mainPage.component';
 import { PrivacyStatementComponent } from './privacyStatement/privacyStatement.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { DetailPageComponent } from './detailPage/detailPage.component';
+// JOSC.Start own Model
+import { ModelModule } from './models/model.modul';
 
 const RouteHome: Routes = [
    { path: 'mainPage', component: MainPageComponent },
@@ -17,8 +19,7 @@ const RouteHome: Routes = [
    { path: 'detailPage', component: DetailPageComponent },
    { path: '**', component: MainPageComponent}
 ];
-// JOSC.Start own Model
-import { ModelModule } from './models/model.modul';
+
 
 
 @NgModule({
