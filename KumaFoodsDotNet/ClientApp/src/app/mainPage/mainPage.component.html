@@ -6,7 +6,7 @@
                 <input type="search" class="form-control" id="inputSearch" placeholder="Suchen" style="width: 600px">
             </div>
             <div class="col col-lg-2">
-                <button class="btn btn-primary" (click)="searchFood()">Suche</button>
+                <button class="btn btn-primary" (click)="searchFoodHandler()">Suche</button>
                 <!-- Eventhandler einbauen -->
                 <div>
                     <a [routerLink]="['/detailPage', foodID]"></a>
