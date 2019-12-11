@@ -1,10 +1,10 @@
 import { Food } from './food.model';
-import { Injectable } from "@angular/core"; 
+import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 
 @Injectable()
 export class Repository {
-    food: Food;
+    foodData: Food;
 
     constructor(private http: HttpClient) {
         // hier wird auf die Razer view drauf zugegriffen. Dies ist nur eine zwischenlösung. 
@@ -15,6 +15,13 @@ export class Repository {
 
     getFood(foodName: string) {
         this.http.get<Food>('/api/foods/' + foodName)
-        .subscribe(f => this.food = f);
+            .subscribe(f => {
+                this.foodData = f;
+                console.log('Product Data Received')
+            });
     }
+
+    get food(): Food {
+        console.log('Product Data Requested'); 
+        return this.foodData; }
 }

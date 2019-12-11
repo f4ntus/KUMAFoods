@@ -30,6 +30,7 @@ namespace ServerApp.Controllers
         [HttpGet("{name}")]
         public Food GetFood(String name)
         {
+            System.Threading.Thread.Sleep(5000);
             return context.Foods.Find(name);
         }
         [HttpGet]

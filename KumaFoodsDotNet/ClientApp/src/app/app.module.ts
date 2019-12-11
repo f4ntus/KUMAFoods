@@ -14,7 +14,7 @@ const RouteHome: Routes = [
    { path: 'mainPage', component: MainPageComponent },
    { path: 'impressum', component: ImpressumComponent },
    { path: 'privacyStatement', component: PrivacyStatementComponent },
-   { path: 'detailPage/:id', component: DetailPageComponent },
+   { path: 'detailPage', component: DetailPageComponent },
    { path: '**', component: MainPageComponent}
 ];
 // JOSC.Start own Model
