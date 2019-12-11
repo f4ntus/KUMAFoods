@@ -15,5 +15,6 @@ export class AppComponent {
       return this.repo.food;
     }
     // JOSC.Stop own Model
-  title = 'SportsStore';
+  title = 'KumaFoods';
+  foodID = 42; // Variable zur Verarbeitung zuordnen
 }

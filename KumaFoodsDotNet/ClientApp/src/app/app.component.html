@@ -1,11 +1,41 @@
-<h2>SportStoreasdf</h2>
-<span>Angular Content Will Go Here</span>
+<!-- NAV-Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">KUMAFoods</a>
 
-<!-- Start JOSC, Create table for Displaying Foods, has to be copied in a own component later-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-<div class="p-2">
-    <table class="table table-sm">
-    <tr><th>Name</th><td>{{food?.foodName}}</td></tr>
-    <tr><th>Description</th><td>{{food?.foodDescription}}</td></tr>
-    </table>
-</div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a [routerLink]="['/mainPage']" style="color:grey">
+                    Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- MainPart -->
+
+<router-outlet></router-outlet>
+
+<!-- Footer -->
+
+<footer class="HeaderFooter">
+    <div class="footer" style="background-color:rgb(247, 247, 247); height: 60px; bottom:0px; padding-bottom:20px;">
+        <span style="color: white; margin-left: 25px">
+            <a style="color: black; float: left; margin-left: 25px">KUMAFoods</a> <br>
+            <a style="color: black; float: left; margin-left: 25px">copyright @KUMAVISION AG</a>
+            <a [routerLink]="['/impressum']" style="color: blue; float: right; margin-right: 25px">
+                Impressum
+            </a>
+            <a [routerLink]="['/privacyStatement']" style="color: blue; float: right; margin-right: 40px">
+                Datenschutz
+            </a>
+        </span>
+    </div>
+</footer>
