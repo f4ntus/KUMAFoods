@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ServerApp.Models;
 
 namespace ServerApp.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20191211154300_newFields")]
+    partial class newFields
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,17 +28,17 @@ namespace ServerApp.Migrations
                     b.Property<string>("FoodDescription")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Fruktosegehalt")
-                        .HasColumnType("float");
+                    b.Property<float>("Fruktosegehalt")
+                        .HasColumnType("real");
 
-                    b.Property<double>("Glukosegehalt")
-                        .HasColumnType("float");
+                    b.Property<float>("Glukosegehalt")
+                        .HasColumnType("real");
 
-                    b.Property<double>("Saccharosegehalt")
-                        .HasColumnType("float");
+                    b.Property<float>("Saccharosegehalt")
+                        .HasColumnType("real");
 
-                    b.Property<double>("Sorbitgehalt")
-                        .HasColumnType("float");
+                    b.Property<float>("Sorbitgehalt")
+                        .HasColumnType("real");
 
                     b.HasKey("FoodName");
 
