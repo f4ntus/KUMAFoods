@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'KumaFoods';
+  foodID = 42; //Variable zur Verarbeitung zuordnen
 }
