@@ -12,4 +12,8 @@ export class MainPageComponent implements OnInit {
   ngOnInit() {
   }
 
+  searchFoods(value: any) {
+    console.log(value);
+  }
+
 }
