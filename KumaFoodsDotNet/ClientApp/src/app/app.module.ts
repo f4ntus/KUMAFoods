@@ -13,7 +13,7 @@ import { DetailPageComponent } from './detailPage/detailPage.component';
 const RouteHome: Routes = [
    { path: 'mainPage', component: MainPageComponent },
    { path: 'impressum', component: ImpressumComponent },
-   { path: 'datenschutz', component: PrivacyStatementComponent },
+   { path: 'privacyStatement', component: PrivacyStatementComponent },
    { path: 'detailPage/:id', component: DetailPageComponent },
    { path: '**', component: MainPageComponent}
 ];
