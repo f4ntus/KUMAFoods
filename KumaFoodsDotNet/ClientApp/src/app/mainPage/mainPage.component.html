@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="colcol-md-auto">
-                <input type="search" class="form-control" id="inputSearch" placeholder="Suchen" style="width: 600px">
+                <input (input)="searchInputString=$event.target.value" type="search" class="form-control" id="inputSearch" placeholder="Suchen" style="width: 600px">
             </div>
             <div class="col col-lg-2">
                 <button class="btn btn-primary" (click)="searchFoodHandler()">Suche</button>

@@ -30,11 +30,10 @@ namespace ServerApp.Controllers
         [HttpGet("{foodName}")]
         public Food GetFood(String foodName)
         {
-            System.Threading.Thread.Sleep(5000);
             return context.Foods.Find(foodName);
         }
         [HttpGet]
-        public IEnumerable<Food> GetProducts( string search)
+        public IEnumerable<Food> GetFoods( string search)
         {
             IQueryable<Food> query = context.Foods;
             if (!string.IsNullOrWhiteSpace(search))

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "SportsStore": {
+    "KumaFoods": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -35,7 +35,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/SportsStore",
+            "outputPath": "dist/KumaFoods",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -80,18 +80,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "SportsStore:build"
+            "browserTarget": "KumaFoods:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "SportsStore:build:production"
+              "browserTarget": "KumaFoods:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "SportsStore:build"
+            "browserTarget": "KumaFoods:build"
           }
         },
         "test": {
@@ -128,15 +128,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "SportsStore:serve"
+            "devServerTarget": "KumaFoods:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "SportsStore:serve:production"
+              "devServerTarget": "KumaFoods:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "SportsStore"
+  "defaultProject": "KumaFoods"
 }
