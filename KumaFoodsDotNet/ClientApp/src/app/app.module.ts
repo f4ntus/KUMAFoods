@@ -11,16 +11,19 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { DetailPageComponent } from './detailPage/detailPage.component';
 // JOSC.Start own Model
 import { ModelModule } from './models/model.modul';
+import { LoginComponent } from './Login/Login.component';
+import { RegisterComponent } from './register/register.component';
 
 const RouteHome: Routes = [
    { path: 'mainPage', component: MainPageComponent },
    { path: 'impressum', component: ImpressumComponent },
    { path: 'privacyStatement', component: PrivacyStatementComponent },
    { path: 'detailPage', component: DetailPageComponent },
-   { path: '**', component: MainPageComponent}
+   { path: 'login', component: LoginComponent },
+   { path: 'register', component: RegisterComponent },
+   { path: '**', component: MainPageComponent }
+
 ];
-
-
 
 @NgModule({
    declarations: [
@@ -29,15 +32,16 @@ const RouteHome: Routes = [
       PrivacyStatementComponent,
       ImpressumComponent,
       DetailPageComponent,
-      PrivacyStatementComponent
+      PrivacyStatementComponent,
+      LoginComponent,
+      RegisterComponent
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
       ModelModule,
       HttpClientModule,
-      // JOOSC.StartownModel\nFormsModule
-      RouterModule.forRoot(RouteHome)
+      RouterModule.forRoot(RouteHome),
    ],
    providers: [],
    bootstrap: [
