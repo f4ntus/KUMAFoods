@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+.container{
+    padding-top: 200px;
+
+}
+
+.imageBack{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-image:url('/../assets/food_ernaehrung_veganismus.jpeg');
+  }
+

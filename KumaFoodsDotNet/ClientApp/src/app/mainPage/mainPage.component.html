@@ -1,0 +1,31 @@
+<!-- Suche-->
+<div class="imageBack">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="colcol-md-auto">
+                <input type="search" class="form-control" id="inputSearch" placeholder="Suchen" style="width: 600px">
+            </div>
+            <div class="col col-lg-2">
+                <button class="btn btn-primary" (click)="searchFoodHandler()">Suche</button>
+                <div>
+                    <a [routerLink]="['/detailPage', foodID]"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Suchergebnis-->
+    <div class="container">
+        <table class="table table-sm table-striped">
+            <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Glukose</th>
+                </tr>
+                <tr *ngFor="let searchresult of searchresults">
+                    <td>{{searchresult?.foodName}}</td>
+                    <td>{{searchresult?.glukosegehalt}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

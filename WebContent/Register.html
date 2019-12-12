@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+</style>
+
+<head>
+    <title>KUMAFoods</title>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="navigation.js"></script>
+</head>
+
+<body
+    style="background-image:url('food_ernaehrung_veganismus.jpeg'); background-size: cover; background-repeat: no-repeat;">
+    <!-- NAV Titlebar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">KUMAFoods</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <body>
+        
+        <!-- Register Start-->
+        <form>
+            <div class="form-group row"; style="color: white; margin-top: 100px; margin-left: 25px">
+                <label for="inputFirstName" class="col-sm-2 col-form-label">Vorname</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputFirstName" placeholder="Vorname*"; style="width: 400px">
+                </div>
+            </div>
+            <div class="form-group row"; style="color: white; margin-left: 25px">
+                <label for="inputLastName" class="col-sm-2 col-form-label">Nachname</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputLastName" placeholder="Nachname*"; style="width: 400px">
+                </div>
+            </div>
+            <div class="form-group row"; style="color: white; margin-left: 25px">
+                <label for="inputUsername" class="col-sm-2 col-form-label">Username</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputUsername" placeholder="Username*"; style="width: 400px">
+                </div>
+            </div>
+            <div class="form-group row"; style="color: white; margin-left: 25px">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">E-Mail</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="E-Mail*"; style="width: 400px">
+                </div>
+            </div>
+            <div class="form-group row"; style="color: white; margin-left: 25px">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Passwort</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Passwort*"; style="width: 400px">
+                </div>
+            </div>
+            <div class="form-group row"; style="color: white; margin-left: 25px">
+                <label for="inputPassword4" class="col-sm-2 col-form-label">Passwort wiederholen</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Passwort wiederholen*"; style="width: 400px">
+                </div>
+            </div>
+            <div class="form-group row"; style="color: white; margin-left: 25px">
+                <div class="col-sm-2">Nutzungsbedingungen</div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Nutzungsbedingungen akzeptieren
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row"; style="margin-left: 25px">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Registrieren</button>
+                </div>
+            </div>
+            <div>
+                <a style="color: white; float: left; margin-left: 40px" href="anmeldung.html">Schon registriert? Hier anmelden </a> <br>
+            </div>
+        </form>
+    </body>
+    <footer class="HeaderFooter">
+        <div class="footer" style="background-color: rgb(247, 247, 247); height: 60px; bottom:0px; padding-bottom:20px;">
+            <span style="color: white; margin-left: 25px">
+                <a style="color: black; float: left; margin-left: 25px">KUMAFoods</a> <br>
+                <a style="color: black; float: left; margin-left: 25px">copyright @KUMAVISION AG</a>
+                <a style="color: blue; float: right; margin-right: 25px" href="impressum.html">Impressum</a>
+                <a style="color: blue; float: right; margin-right: 40px;" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
+            </span>
+
+        </div>
+
+    </footer>
+
+</body>
