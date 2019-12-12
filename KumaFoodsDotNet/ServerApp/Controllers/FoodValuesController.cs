@@ -7,7 +7,7 @@ using ServerApp.Models;
 
 
 /* JOSC: This Class is an Controller for the Webservices of foods. 
- * you can get an singel food with the following link:
+ * you can get an single food with the following link:
  * https://localhost:5001/api/foods/Gurke -> you will receive an Gurke Object
  * 
  * it is also possible to receive the hole food Data with Link:
@@ -27,10 +27,11 @@ namespace ServerApp.Controllers
         {
             context = ctx;
         }
-        [HttpGet("{name}")]
-        public Food GetFood(String name)
+        [HttpGet("{foodName}")]
+        public Food GetFood(String foodName)
         {
-            return context.Foods.Find(name);
+            System.Threading.Thread.Sleep(5000);
+            return context.Foods.Find(foodName);
         }
         [HttpGet]
         public IEnumerable<Food> GetProducts( string search)

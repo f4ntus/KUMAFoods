@@ -9,3 +9,5 @@ KumaFoodsDotNet/ServerApp/obj/Debug/netcoreapp3.0/ServerApp.csprojAssemblyRefere
 KumaFoodsDotNet/ServerApp/bin/Debug/netcoreapp3.0/ServerApp.pdb
 KumaFoodsDotNet/ServerApp/bin/Debug/netcoreapp3.0/ServerApp.dll
 KumaFoodsDotNet/.vs/ServerApp/v16/Server/sqlite3/storage.ide-wal
+KumaFoodsDotNet/.vs/ServerApp/v16/Server/sqlite3/storage.ide-shm
+KumaFoodsDotNet/ServerApp/bin/Debug/netcoreapp3.0/ServerApp.Views.dll
