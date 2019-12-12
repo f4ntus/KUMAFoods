@@ -1,4 +1,19 @@
-<div class="container" style="height: 100vh; background-color: cadetblue; background-size:cover; background-attachment: fixed;">
+<div class="container">
+  <table class="table table-sm table-striped">
+    <tbody>
+      <tr>
+        <th>Name</th>
+        <th>Glukose</th>
+      </tr>
+      <tr *ngFor="let food of foods">
+        <td>{{food.foodName}}</td>
+        <td>{{food.glukosegehalt}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- <div class="container" style="height: 100vh; background-color: cadetblue; background-size:cover; background-attachment: fixed;">
   <div class="container-fluid">
     <div class="row">
       <div class="col">
@@ -35,4 +50,4 @@
       </div>
     </div>
   </div>
-</div>
+</div>  -->

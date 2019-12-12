@@ -5,9 +5,10 @@
 }
 
 .imageBack{
-    background-size:cover; 
-    background-attachment: fixed;
-    background-image:url('/../assets/food_ernaehrung_veganismus.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
+    background-image:url('/../assets/food_ernaehrung_veganismus.jpeg');
   }
 

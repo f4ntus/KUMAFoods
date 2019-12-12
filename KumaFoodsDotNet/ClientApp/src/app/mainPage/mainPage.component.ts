@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { log } from 'util';
+import { HttpClient } from '@angular/common/http';
+import { Food } from './../models/food.model';
+import { Repository } from './../models/repository';
 
 @Component({
   selector: 'app-mainPage',
@@ -7,13 +11,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  searchresults: Food[];
+  constructor(private repo: Repository) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {  }
 
-  /* searchFoods(value: any) {
-    console.log(value);
-  } */
+  searchFoodHandler() {
+    this.searchresults = this.repo.foods;
+    }
+
+
+
 
 }

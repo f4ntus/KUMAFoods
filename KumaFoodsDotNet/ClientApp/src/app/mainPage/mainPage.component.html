@@ -6,20 +6,26 @@
                 <input type="search" class="form-control" id="inputSearch" placeholder="Suchen" style="width: 600px">
             </div>
             <div class="col col-lg-2">
-                <button class="btn btn-primary" (click)="searchFood()">Suche</button>
-                <!-- Eventhandler einbauen -->
+                <button class="btn btn-primary" (click)="searchFoodHandler()">Suche</button>
                 <div>
                     <a [routerLink]="['/detailPage', foodID]"></a>
                 </div>
             </div>
         </div>
-        <!-- Suchergebnis-->
-        <div class="row">
-            <div class="col">
-                <table class="table table-hover" id="SearchResultTable">
-                    <!-- will be filled with content from JS-->
-                </table>
-            </div>
-        </div>
+    </div>
+    <!-- Suchergebnis-->
+    <div class="container">
+        <table class="table table-sm table-striped">
+            <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Glukose</th>
+                </tr>
+                <tr *ngFor="let searchresult of searchresults">
+                    <td>{{searchresult?.foodName}}</td>
+                    <td>{{searchresult?.glukosegehalt}}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
