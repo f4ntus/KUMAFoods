@@ -17,8 +17,9 @@ export class MainPageComponent implements OnInit {
   ngOnInit() {  }
 
   searchFoodHandler() {
+    this.repo.getFoods('Gurke');
     this.searchresults = this.repo.foods;
-    }
+  }
 
 
 
