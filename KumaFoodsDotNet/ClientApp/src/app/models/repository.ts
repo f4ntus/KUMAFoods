@@ -25,7 +25,8 @@ export class Repository {
 
 
     getFoods() {
-        this.http.get<Food[]>(('/api/foods'))
+        this.http.get<Food[]>(('/api/foods?search=Honig'))
         .subscribe(foods => this.foods = foods);
     }
+    
 }
