@@ -12,7 +12,7 @@ export class Repository {
         // hier wird auf die Razer view drauf zugegriffen. Dies ist nur eine zwischenlösung. 
         // Eigentlich sollte es über einen HTTP gehen. 
         //this.food = JSON.parse(document.getElementById("data").textContent);
-        this.getFoods('');
+        this.getFoods('').subscribe(foods => this.foods = foods);
     }
 
     getFood(foodName: string) {
@@ -28,8 +28,7 @@ export class Repository {
         console.log(searchString);
         let requestLink = '/api/foods?search=' + searchString;
         console.log(requestLink);
-        this.http.get<Food[]>(requestLink)
-        .subscribe(foods => this.foods = foods);
-        console.log(this.foods);
+        return this.http.get<Food[]>(requestLink);
+        //console.log(this.foods);
     }
 }

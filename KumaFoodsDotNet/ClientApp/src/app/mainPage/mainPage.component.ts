@@ -12,13 +12,13 @@ import { Repository } from './../models/repository';
 export class MainPageComponent implements OnInit {
 
   searchresults: Food[];
+  searchInputString: string;
   constructor(private repo: Repository) { }
 
   ngOnInit() {  }
 
   searchFoodHandler() {
-    this.repo.getFoods('Gurke');
-    this.searchresults = this.repo.foods;
+    this.repo.getFoods(this.searchInputString).subscribe(foods => this.searchresults = foods);
   }
 
 
