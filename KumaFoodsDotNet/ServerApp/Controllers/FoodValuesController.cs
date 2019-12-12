@@ -33,9 +33,14 @@ namespace ServerApp.Controllers
             return context.Foods.Find(name);
         }
         [HttpGet]
-        public IEnumerable<Food> GetProducts()
+        public IEnumerable<Food> GetProducts( string search)
         {
             IQueryable<Food> query = context.Foods;
+            if (!string.IsNullOrWhiteSpace(search))
+            {
+                string searchLower = search.ToLower();
+                query = query.Where(p => p.FoodName.ToLower().Contains(searchLower));
+            }
             return query;
         }
     }
