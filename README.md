@@ -1,4 +1,4 @@
-KUMAFoods
+KUMAFoods.<br>
 Unsere Webanwendung informiert über den Fruktosegehalt, den Glukosegehalt und den Saccharosegehalt verschiedener Lebensmittel.
 
 Verwendete Technologien
