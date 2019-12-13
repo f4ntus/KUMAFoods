@@ -7,10 +7,14 @@ Verwendete Technologien
 * Frameworks (server-side): ASP.Net Core, Microsoft SQL Database
 
 Installation
+* Installieren Sie SQL Server Management Studio
 * Installieren Sie.Net Core https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-3.0.100-windows-x64-installer
 * Installieren Sie Node.js https://nodejs.org/dist/v12.4.0/node-v12.4.0-x64.msi
 * Installieren Sie https://www.visualstudio.com/vs
-* Öffnen sie die Projektmappe ServerApp.sln, die sich im KumaFoodsDotNet Ordner befindet.
+
+
+* Öffnen Sie die Projektmappe ServerApp.sln, die sich im KumaFoodsDotNet Ordner befindet.
+* Öffnen Sie die appsettings.json und geben Sie unter dem Punkt "DefaultConnection": "Data Source:" den Namen Ihres lokalen Servers an erster Stelle an. Diese finden Sie, wenn Sie SQL Server Management Studio öffnen.
 * Im Projektmappen-Explorer öffnen Sie die Eigenschaftenseiten der ClientApp per Rechtsklick.
 * Unter dem Punkt Erstellen entfernen Sie das Häkchen bei "Website als Teil der Projektmappe erstellen"
 * Im Projektmappen-Explorer erstellen Sie eine neue Projektmappe per Rechtsklick auf Projektmappe „ServerApp“
