@@ -1,3 +1,5 @@
+import { RegisterComponent } from './register/register/register.component';
+import { LoginComponent } from './Login/Login/Login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -16,6 +18,8 @@ const RouteHome: Routes = [
    { path: 'mainPage', component: MainPageComponent },
    { path: 'impressum', component: ImpressumComponent },
    { path: 'privacyStatement', component: PrivacyStatementComponent },
+   { path: 'register', component: RegisterComponent },
+   { path: 'login', component: LoginComponent },
    { path: 'detailPage/:foodName', component: DetailPageComponent },
    { path: '**', component: MainPageComponent}
 ];
@@ -29,7 +33,9 @@ const RouteHome: Routes = [
       PrivacyStatementComponent,
       ImpressumComponent,
       DetailPageComponent,
-      PrivacyStatementComponent
+      PrivacyStatementComponent,
+      LoginComponent,
+      RegisterComponent
    ],
    imports: [
       BrowserModule,
