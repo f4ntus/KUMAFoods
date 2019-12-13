@@ -11,18 +11,19 @@ Installation
 * Installieren Sie Node.js https://nodejs.org/dist/v12.4.0/node-v12.4.0-x64.msi
 * Installieren Sie https://www.visualstudio.com/vs
 * Öffnen sie die Projektmappe ServerApp.sln, die sich im KumaFoodsDotNet Ordner befindet.
-* Im Projektmappen-Explorer öffnen sie die Eigenschaftenseiten der ClientApp per Rechtsklick.
+* Im Projektmappen-Explorer öffnen Sie die Eigenschaftenseiten der ClientApp per Rechtsklick.
+* Unter dem Punkt Erstellen entfernen Sie das Häkchen bei "Website als Teil der Projektmappe erstellen"
 * Im Projektmappen-Explorer erstellen Sie eine neue Projektmappe per Rechtsklick auf Projektmappe „ServerApp“
 * Öffnen sie die Developer Powershell über „Extras“ → „Befehlszeile“ und geben Sie die folgenden Befehle einzeln ein.
 * dotnet tool uninstall --global dotnet-ef  
-**dotnet tool install --global dotnet-ef --version 3.0.0  
-**dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.0.0  
-**dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.0.0  
-**dotnet dev-certs https –clean  
-**dotnet dev-certs https --trust  
-**dotnet ef migrations add Initial 
-**cd Server App
-**dotnet watch run
+dotnet tool install --global dotnet-ef --version 3.0.0  
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.0.0  
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.0.0  
+dotnet dev-certs https –clean  
+dotnet dev-certs https --trust  
+dotnet ef migrations add Initial 
+cd Server App
+dotnet watch run
 
 Unsere Seite können Sie nun unter der nachfolgenden URL öffnen.
 https://localhost:5001/
