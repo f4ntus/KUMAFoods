@@ -16,7 +16,7 @@ export class Repository {
     }
 
     getFood(foodName: string) {
-        this.http.get<Food>('/api/foods/' + foodName)
+        this.http.get<Food>('/api/foods?search' + foodName)
             .subscribe(f => {
                 this.food = f;
                 console.log(this.food);

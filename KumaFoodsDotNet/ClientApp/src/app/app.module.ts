@@ -16,7 +16,7 @@ const RouteHome: Routes = [
    { path: 'mainPage', component: MainPageComponent },
    { path: 'impressum', component: ImpressumComponent },
    { path: 'privacyStatement', component: PrivacyStatementComponent },
-   { path: 'detailPage', component: DetailPageComponent },
+   { path: 'detailPage/:foodName', component: DetailPageComponent },
    { path: '**', component: MainPageComponent}
 ];
 

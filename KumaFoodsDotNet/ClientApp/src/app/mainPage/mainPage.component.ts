@@ -13,12 +13,18 @@ export class MainPageComponent implements OnInit {
 
   searchresults: Food[];
   searchInputString: string;
+  foodName;
   constructor(private repo: Repository) { }
 
   ngOnInit() {  }
 
   searchFoodHandler() {
     this.repo.getFoods(this.searchInputString).subscribe(foods => this.searchresults = foods);
+  }
+
+  MyClickHandler(choosenFood) {
+    this.foodName = choosenFood.path[0].textContent;
+    console.log(this.foodName);
   }
 
 

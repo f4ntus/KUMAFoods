@@ -16,5 +16,4 @@ export class AppComponent {
     }
     // JOSC.Stop own Model
   title = 'KumaFoods';
-  foodID = 42; // Variable zur Verarbeitung zuordnen
 }

@@ -13,19 +13,19 @@ export class DetailPageComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private repo: Repository
-    ) { }
+  ) { }
 
   ngOnInit() {
     // hier DB-Abfrage hinterlegen
     // tslint:disable-next-line: no-string-literal
-    console.log(this.route.snapshot.params['id']); // Bsp zum loggen der ID
+    console.log(this.route.snapshot.params['foodName']);
   }
 
-  get food(): Food{
+  get food(): Food {
     return this.repo.food;
   }
 
-  get foods(): Food[] {
+   get foods(): Food[] {
     return this.repo.foods;
   }
 

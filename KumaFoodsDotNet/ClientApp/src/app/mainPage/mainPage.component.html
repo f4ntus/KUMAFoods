@@ -19,11 +19,15 @@
             <tbody>
                 <tr>
                     <th>Name</th>
-                    <th>Glukose</th>
+                    <th>Glukose (g/100g)</th>
+                    <th>Fruktose (g/100g)</th>
+                    <th>Saccharose (g/100g)</th>
                 </tr>
                 <tr *ngFor="let searchresult of searchresults">
-                    <td>{{searchresult?.foodName}}</td>
+                    <td (click)="MyClickHandler($event)" [routerLink]="['/detailPage', foodName]">{{searchresult?.foodName}} </td>
                     <td>{{searchresult?.glukosegehalt}}</td>
+                    <td>{{searchresult?.fruktosegehalt}}</td>
+                    <td>{{searchresult?.saccharosegehalt}}</td>
                 </tr>
             </tbody>
         </table>
