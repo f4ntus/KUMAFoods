@@ -1,6 +1,6 @@
 # KUMAFoods
 ## Documentation
-This web-application is used to inform about the fructose content, sorbitol content, glucose content and the sucrose content of various foods.
+This web-application is used to inform about the fructose content, glucose content and the sucrose content of various foods.
 
 ### Technologies
 The web-application uses the following technology stack:
