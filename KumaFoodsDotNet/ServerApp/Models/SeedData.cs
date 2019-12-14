@@ -13,7 +13,7 @@ namespace ServerApp.Models
         public static void SeedDatabase(DataContext context)
         {
             context.Database.Migrate();
-            var reader = new StreamReader(@".\Models\Ernaehrungstabelle.csv", Encoding.UTF8);
+            var reader = new StreamReader(@".\wwwroot\Ernaehrungstabelle.csv", Encoding.UTF8);
             while (!reader.EndOfStream)
             {
                 string line = reader.ReadLine();

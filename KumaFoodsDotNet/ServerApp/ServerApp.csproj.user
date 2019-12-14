@@ -5,6 +5,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <ActiveDebugProfile>ServerApp</ActiveDebugProfile>
-    <NameOfLastUsedPublishProfile>KumaFoods - FTP</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>KumaFoods - Web Deploy</NameOfLastUsedPublishProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>

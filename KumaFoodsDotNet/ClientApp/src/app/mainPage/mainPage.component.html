@@ -7,9 +7,7 @@
             </div>
             <div class="col col-lg-2">
                 <button class="btn btn-primary" (click)="searchFoodHandler()">Suche</button>
-                <div>
-                    <a [routerLink]="['/detailPage', foodID]"></a>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -24,7 +22,7 @@
                     <th>Saccharose (g/100g)</th>
                 </tr>
                 <tr *ngFor="let searchresult of searchresults">
-                    <td (click)="MyClickHandler($event)" [routerLink]="['/detailPage', foodName]">{{searchresult?.foodName}} </td>
+                    <td (click)="MyClickHandler($event)" >{{searchresult?.foodName}} </td>
                     <td>{{searchresult?.glukosegehalt}}</td>
                     <td>{{searchresult?.fruktosegehalt}}</td>
                     <td>{{searchresult?.saccharosegehalt}}</td>

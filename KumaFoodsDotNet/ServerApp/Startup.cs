@@ -11,12 +11,25 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using ServerApp.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Antiforgery;
+using Microsoft.AspNetCore.Http;
 
 namespace ServerApp {
     public class Startup {
 
-        public Startup(IConfiguration configuration) {
-            Configuration = configuration;
+        public Startup(IWebHostEnvironment env)
+        {
+            var builder = new ConfigurationBuilder()
+            .SetBasePath(env.ContentRootPath)
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+            .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+            .AddEnvironmentVariables()
+            .AddCommandLine(System.Environment.GetCommandLineArgs()
+            .Skip(1).ToArray());
+            Configuration = builder.Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -29,11 +42,15 @@ namespace ServerApp {
             services.AddRazorPages();
         }
 
-        
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider services) {
-            if (env.IsDevelopment()) {
+
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider services)
+        {
+            if (env.IsDevelopment())
+            {
                 app.UseDeveloperExceptionPage();
-            } else {
+            }
+            else
+            {
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
@@ -42,25 +59,35 @@ namespace ServerApp {
             app.UseStaticFiles();
             app.UseRouting();
             app.UseAuthorization();
-
-            app.UseEndpoints(endpoints => {
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                RequestPath = "",
+                FileProvider = new PhysicalFileProvider(
+ Path.Combine(Directory.GetCurrentDirectory(),
+ "./wwwroot/app"))
+            });
+            app.UseEndpoints(endpoints =>
+            {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
-
-            app.UseSpa(spa => {
+            SeedData.SeedDatabase(services.GetRequiredService<DataContext>());
+            app.UseSpa(spa =>
+            {
                 string strategy = Configuration
                     .GetValue<string>("DevTools:ConnectionStrategy");
-                if (strategy == "proxy") {
+                if (strategy == "proxy")
+                {
                     spa.UseProxyToSpaDevelopmentServer("http://127.0.0.1:4200");
-                } else if (strategy == "managed") {
+                }
+                else if (strategy == "managed")
+                {
                     spa.Options.SourcePath = "../ClientApp";
                     spa.UseAngularCliServer("start");
                 }
             });
-            SeedData.SeedDatabase(services.GetRequiredService<DataContext>());
         }
     }
 }
